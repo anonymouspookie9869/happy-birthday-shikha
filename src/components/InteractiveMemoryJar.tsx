@@ -21,7 +21,7 @@ export default function InteractiveMemoryJar({ onNext }: { onNext: () => void })
 
     const handleTap = (index: number) => {
         // Play subtle UI click sound
-        const clickSound = new Audio("https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3")
+        const clickSound = new Audio("https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/memory_reveal.mp3")
         clickSound.volume = 0.2
         clickSound.play().catch(e => console.log("Audio play failed:", e))
 
@@ -31,7 +31,7 @@ export default function InteractiveMemoryJar({ onNext }: { onNext: () => void })
             
             // Play a gentle success sound if all revealed
             if (newRevealed.length === MEMORIES.length) {
-                const successSound = new Audio("https://assets.mixkit.co/active_storage/sfx/2019/2019-preview.mp3")
+                const successSound = new Audio("https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/all_revealed_sparkle.mp3")
                 successSound.volume = 0.2
                 setTimeout(() => successSound.play().catch(e => console.log("Audio play failed:", e)), 600)
             }
