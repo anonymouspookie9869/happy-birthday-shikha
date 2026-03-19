@@ -48,7 +48,7 @@ export default function MusicPlayer() {
         <div className="fixed top-4 right-4 z-50">
             <audio 
                 ref={audioRef} 
-                src="/audio.mp3" 
+                src="https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/audio.mp3" 
                 loop 
             />
             <motion.button
