@@ -13,7 +13,7 @@ export default function ProposalScreen({ onDone }: { onDone: () => void }) {
     const handleNo = () => {
         setNoCount(prev => prev + 1)
         // Play funny sound
-        const boingSound = new Audio("https://assets.mixkit.co/active_storage/sfx/2572/2572-preview.mp3")
+        const boingSound = new Audio("https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/no_button_boing.mp3")
         boingSound.volume = 0.3
         boingSound.play().catch(e => console.log("Audio play failed:", e))
 
@@ -112,7 +112,7 @@ export default function ProposalScreen({ onDone }: { onDone: () => void }) {
                     className="relative"
                 >
                     <img
-                        src="https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/proposal_sucess.jpg"
+                        src="https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/proposal_success.jpg"
                         alt="Celebration"
                         className="w-64 h-64 rounded-full object-cover border-8 border-pink-400 shadow-[0_0_50px_rgba(244,114,182,0.6)]"
                         referrerPolicy="no-referrer"
