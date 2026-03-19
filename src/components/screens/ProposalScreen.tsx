@@ -112,7 +112,7 @@ export default function ProposalScreen({ onDone }: { onDone: () => void }) {
                     className="relative"
                 >
                     <img
-                        src="https://picsum.photos/seed/celebrate/400/400"
+                        src="https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/proposal_sucess.jpg"
                         alt="Celebration"
                         className="w-64 h-64 rounded-full object-cover border-8 border-pink-400 shadow-[0_0_50px_rgba(244,114,182,0.6)]"
                         referrerPolicy="no-referrer"
@@ -167,7 +167,7 @@ export default function ProposalScreen({ onDone }: { onDone: () => void }) {
             >
                 <div className="relative z-10">
                     <img
-                        src="https://picsum.photos/seed/proposal/400/400"
+                        src="https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/proposal_question.jpg"
                         alt="Proposal"
                         className="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover border-4 border-pink-300 shadow-2xl"
                         referrerPolicy="no-referrer"
