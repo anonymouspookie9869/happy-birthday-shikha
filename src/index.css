@@ -1,0 +1,244 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+@theme {
+  --font-kalam: "Kalam", cursive;
+}
+
+:root {
+  font-family: var(--font-kalam);
+}
+
+body {
+  @apply bg-[#0a0508] text-white antialiased select-none overflow-x-hidden;
+  touch-action: manipulation;
+}
+
+/* Kawaii Floating Hearts */
+.floating-heart {
+  position: absolute;
+  pointer-events: none;
+  animation: float 6s ease-in infinite;
+  opacity: 0;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) scale(0); opacity: 0; }
+  20% { opacity: 0.6; }
+  80% { opacity: 0.6; }
+  100% { transform: translateY(-20vh) scale(1.5); opacity: 0; }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 640px) {
+  .font-romantic {
+    @apply text-4xl leading-tight;
+  }
+}
+
+/* Cake Styles - Updated for Kawaii Pink */
+.cake {
+  position: relative;
+  width: 250px;
+  height: 200px;
+}
+
+.plate {
+  width: 300px;
+  height: 110px;
+  background: #fce7f3;
+  position: absolute;
+  bottom: -10px;
+  left: -25px;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 #fbcfe8, 0 4px 0 #fbcfe8, 0 5px 40px rgba(255, 182, 193, 0.3);
+}
+
+.layer {
+  position: absolute;
+  display: block;
+  width: 250px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.layer-bottom {
+  bottom: 0;
+  background: #f472b6;
+}
+
+.layer-middle {
+  bottom: 30px;
+  background: #ec4899;
+}
+
+.layer-top {
+  bottom: 60px;
+  background: #db2777;
+}
+
+.icing {
+  top: 40px;
+  left: 0;
+  background: #fdf2f8;
+  width: 250px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.drip {
+  display: block;
+  width: 50px;
+  height: 60px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: #fdf2f8;
+  position: absolute;
+}
+
+.drip1 { top: 70px; left: 10px; transform: skewY(15deg); height: 40px; }
+.drip2 { top: 85px; left: 100px; transform: skewY(-5deg); }
+.drip3 { top: 80px; left: 190px; transform: skewY(-15deg); height: 50px; }
+
+.candle {
+  background: #ffffff;
+  width: 16px;
+  height: 50px;
+  border-radius: 8px / 4px;
+  top: 10px;
+  left: 50%;
+  margin-left: -8px;
+  z-index: 10;
+  position: absolute;
+  border: 2px solid #f9a8d4;
+}
+
+.candle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f472b6;
+}
+
+.flame {
+  position: absolute;
+  background-color: #ff69b4;
+  width: 15px;
+  height: 35px;
+  border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
+  top: -34px;
+  left: 50%;
+  margin-left: -7.5px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.5), 0 0 60px rgba(255, 105, 180, 0.5), 0 0 80px rgba(255, 105, 180, 0.5);
+  transform-origin: 50% 90%;
+  animation: flicker 1s ease-in-out infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1) rotate(3deg); }
+}
+
+/* Spinner for Loader */
+.spinner {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#f472b6 35%,#d8b4fe);
+  border-radius: 100px;
+  animation: spinning82341 1.7s linear infinite;
+}
+
+.spinner1 {
+  background-color: rgb(10, 5, 8);
+  width: 190px;
+  height: 190px;
+  border-radius: 100px;
+}
+
+/* Cinematic Vignette & Stars */
+.vignette {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(10, 5, 8, 0.4) 50%, rgba(10, 5, 8, 0.9) 100%);
+  pointer-events: none;
+  z-index: 50;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle var(--duration) infinite ease-in-out;
+  animation-delay: var(--delay);
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.8; transform: scale(1.2); }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.font-romantic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(244, 114, 182, 0.5);
+}
+
+.bg-glow {
+  box-shadow: 0 0 50px rgba(244, 114, 182, 0.2);
+}
+
+@keyframes spinning82341 {
+  to { transform: rotate(360deg); }
+}
+
+/* Flip Card Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+@keyframes heart-rain {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.heart-rain {
+  position: fixed;
+  top: -10vh;
+  pointer-events: none;
+  z-index: 100;
+  animation: heart-rain linear forwards;
+}
