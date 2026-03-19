@@ -15,10 +15,10 @@ interface PhotoData {
 }
 
 const photos: PhotoData[] = [
-  { src: "https://picsum.photos/seed/mem1/600/800", note: "The way you look at me... it's intoxicating. 🧛‍♀️❤️", emoji: "🍷" },
-  { src: "https://picsum.photos/seed/mem2/600/800", note: "My heart beats only for you, my vampire. 💓", emoji: "🦇" },
-  { src: "https://picsum.photos/seed/mem3/600/800", note: "Forever isn't long enough with you. ♾️", emoji: "💍" },
-  { src: "https://picsum.photos/seed/mem4/600/800", note: "You're the magic in my dark world. ✨", emoji: "🌙" },
+  { src: "https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/memory_1.jpg", note: "The way you look at me... it's intoxicating. 🧛‍♀️❤️", emoji: "🍷" },
+  { src: "https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/memory_2.jpg", note: "My heart beats only for you, my vampire. 💓", emoji: "🦇" },
+  { src: "https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/memory_3.jpg", note: "Forever isn't long enough with you. ♾️", emoji: "💍" },
+  { src: "https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/memory_4.jpg", note: "You're the magic in my dark world. ✨", emoji: "🌙" },
 ]
 
 function FlipCard({ photo }: { photo: PhotoData }) {

@@ -13,7 +13,7 @@ export default function IntroScreen({ onNext }: { onNext: () => void }) {
                         transition={{ duration: 4, repeat: Infinity }}
                     >
                         <img
-                            src="https://picsum.photos/seed/kawaii/400/400"
+                            src="https://raw.githubusercontent.com/anonymouspookie9869/happy-birthday-shikha/main/into_topper.jpg"
                             alt="Cute birthday animation topper"
                             className="w-[160px] md:w-[200px] rounded-full object-cover shadow-[0_0_40px_rgba(244,114,182,0.5)] border-4 border-pink-400"
                             referrerPolicy="no-referrer"
